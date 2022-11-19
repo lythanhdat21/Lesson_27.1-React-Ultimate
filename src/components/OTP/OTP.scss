@@ -1,0 +1,57 @@
+.otp-parent-container{
+    max-width: 70vw; //70% view width.
+    margin   : 0 auto; //cho vào giữa màn hình
+    // border   : 1px solid red;
+    padding  : 15px; //khoảng cách giữa các dòng 15px
+
+    .input-otp-container{
+        border: 1px solid #d6d6d6;
+        display: flex; // dàn theo hàng hàng.
+        flex-direction: column; // dàn theo hàng dọc.
+        justify-content: center;
+        align-items: center;
+        gap: 15px; //Khoảng cách giữa các dòng là 15px.
+        width: 600px; // chiều rộng border.
+        margin: 0 auto; // căn giữa.
+        padding: 10px 0; // top and bottom: 10 px; left and right: 0 px.
+        border-radius: 5px; // viền tròn.
+
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .input-customize{
+            width: 3rem !important;
+            height: 3rem;
+            margin: 0 1rem;
+            font-size: 2rem;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            }
+
+        .action{
+            button{
+                height: 28px;
+                margin-left: 20px; // nút bên phải chạy ra 10 px.
+            }
+        }
+    }
+
+    .generate-otp-container{
+        text-align: center;
+        margin: 20px 0; //top & bottom left & right
+
+        button{
+            height: 28px;
+        }
+
+        .title{
+            padding-top: 15px;
+            font-size: 18px;
+            font-weight: 600; //in đậm
+        }
+    }  
+}
+
+

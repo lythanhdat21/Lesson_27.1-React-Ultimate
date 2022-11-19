@@ -1,0 +1,60 @@
+.Weather-app-container {
+    .search-weather-container {
+        .search-inputs {
+            display: flex; // dàn các items theo hàng ngang, để làm các bước tiếp theo
+            justify-content: center;
+            gap: 15px; // khoảng cách giữa các item là 15px
+            padding-top: 15px; // khoảng cách dòng trên cùng là 15px
+            height: 28px; // Các items trông rộng ra
+
+            input {
+                width: 200px; // Chiều rộng của ô Input
+                padding: 0 5px; //ký tự cách cạnh tứ giác, trên dưới: 0px; trái phải: 5px
+            }
+        }
+
+        .result-container {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: space-between; // căn đều 2 bên trái và phải
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px;
+
+            .woeid {
+                span {
+                    cursor: pointer; // hiển thị bàn tay khi đưa chuột vào hàng chữ.
+                }
+            }
+        }
+    }
+}
+
+.w-b-l-container {
+    padding: 15px;
+}
+
+.list-weather-day {
+    display: flex; // dàn hàng ngang
+    gap: 20px;
+
+    .weather-day-0 {
+        display: flex;
+
+        .location-data {
+            padding: 15px;
+            min-width: 100px;
+
+            .title {
+                font-size: 20px;
+                color: #e6175c;
+                margin-bottom: 10px;
+            }
+
+            .time {
+                font-size: 13px;
+            }
+        }
+    }
+}
