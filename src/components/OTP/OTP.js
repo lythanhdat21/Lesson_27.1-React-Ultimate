@@ -10,6 +10,17 @@ const OTP = () => {
     const [isDisableBtn, setIsDisableBtn] = useState(false) // vẫn cho người dùng click
 
     const handleSubmitOTP = () => {
+
+        if (!orgOTPParent) {
+            alert("Please generate an OTP...")
+            return
+        }
+
+        if (!useOTPParent) {
+            alert("Please enter an OTP...")
+            return
+        }
+
         if (+orgOTPParent === +useOTPParent) { // "+" convert to number
             alert("CORRECT OTP")
         }

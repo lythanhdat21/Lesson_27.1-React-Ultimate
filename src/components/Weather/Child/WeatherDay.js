@@ -9,7 +9,7 @@ const WeatherDay = (props) => {
     return (
         <div className="weather-day-container">
 
-            <div className="date">{moment(dataWeather.applicable_date).format("DD MM YYYY")}</div>
+            <div className="date">{moment(dataWeather.applicable_date).format("ddd DD-MM-YYYY")}</div>
 
             <div className="state">
                 <WeatherState
@@ -30,5 +30,4 @@ const WeatherDay = (props) => {
     )
 }
 export default WeatherDay
-
 

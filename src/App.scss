@@ -1,8 +1,8 @@
 .App {
-    padding: 40px;
+    padding: 77px;
     font-size: 14px;
     background-color: #282c34;
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 80px);
     display: flex;
 
     .content-left {
@@ -33,7 +33,7 @@
     font-size: calc(10px + 2vmin);
     color: white;
 
-    span{
+    span {
         color: red;
         font-size: 18px;
     }
